@@ -1,2 +1,2 @@
 # MusicPlayer
-Trying to make a music player for myself
+Trying to make a simple music player
