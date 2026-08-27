@@ -31,10 +31,10 @@ class AudioPlayer:
             self._media_player.play()
             self.state = PlayState.PLAYING
 
-    def toggle_play_pause(self, filepath: str):
-        if self.state == PlayState.STOPPED:
-            self.play(filepath)
-        elif self.state == PlayState.PLAYING:
+    def toggle_play_pause(self):
+        if self.state == PlayState.PLAYING:
             self.pause()
         elif self.state == PlayState.PAUSED:
             self.resume()
+        #elif self.state == PlayState.STOPPED:
+        #    self.play(filepath)
